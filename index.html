@@ -30,12 +30,16 @@
     .primary-font{
         font-family: 'Manrope', sans-serif;
     }
+    header,
+    main{
+        margin: 0 auto;
+    }
 
 </style>
     <title>Hockey's</title>
 </head>
 <body class="primary-font">
-    <header>
+    <header class="w-[1170px]">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
               <div class="dropdown">
@@ -69,12 +73,93 @@
             </div>
           </div>
 
+          <!-- Carousol Section -->
+          <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="images/1.png" class="w-full h-[550px]" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="images/2.png" class="w-full h-[550px]" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="images/3.png" class="w-full h-[550px]" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            
+            </div>
+          </div>
+
     </header>
-    <main>
+    <main class="w-[1170px]">
+      <section >
+        <div class="text-center m-10">
+          <h1 class="text-4xl">Professional Hockeys Club</h1>
+          <p class="text-base">
+            Hockey's is a professional club.It was established 1971. From 1971 It is producing value able player in the national team
+          </p>
+        </div>
+        <div class="flex justify-items-center justify-center justify-evenly text-center">
+        <div class="block justify-items-center justify-center">
+          <div class="radial-progress bg-white text-[#FF4240]" style="--value:87; " role="progressbar "><span class="text-black" >87%</span></div>
+          <h2 class="text-xl">Prayer Facility</h2>
+          <p class="text-base text-center">We ensure prayer Facility in our club</p>
+        </div>
+        <div>
+          <div class="radial-progress bg-white text-[#49D293]" style="--value:90;" role="progressbar"><span class="text-black" >90%</span></div>
+          <h2 class="text-xl">Experienced Coach</h2>
+          <p class="text-base text-center">We ensure xperienced coach in our club</p>
+        </div>
+        <div>
+          <div class="radial-progress bg-white text-[#FFB546]" style="--value:95;" role="progressbar"><span class="text-black" >95%</span></div>
+          <h2 class="text-xl">Senior Player</h2>
+          <p class="text-base text-center">We have senior player in our club</p>
+        </div>
+        <div>
+          <div class="radial-progress bg-white text-[#4C8DF1] " style="--value:80;" role="progressbar"><span class="text-black" >80%</span></div>
+          <h2 class="text-xl">Training Ground</h2>
+          <p class="text-base text-center">We have training ground in our club</p>
+        </div>
+        </div>
+      </section>
 
     </main>
-    <footer>
-
+    <footer class="footer p-10 bg-neutral text-neutral-content">
+      <nav class="text-center">
+        <header class="footer-title">Get In Touch</header> 
+        <a class="link link-hover">contact@hockeys.com</a>
+        <a class="link link-hover">+880181050111</a>
+      </nav> 
+      <nav class="text-center">
+        <header class="footer-title">Support</header> 
+        <a class="link link-hover">Help Center</a>
+        <a class="link link-hover">FAQ</a>
+        <a class="link link-hover">Ticket Support</a>
+        <a class="link link-hover">Contact Us</a>
+      </nav> 
+      <nav>
+        <header class="footer-title">Company</header> 
+        <a class="link link-hover">Leadership</a>
+        <a class="link link-hover">Careers</a>
+        <a class="link link-hover">News & Article</a>
+        <a class="link link-hover">Legal Notice</a>
+      </nav> 
+      <nav>
+        <header class="footer-title">Services</header> 
+        <a class="link link-hover">Academy</a>
+        <a class="link link-hover">Group Lesson</a>
+        <a class="link link-hover">Hockeys for kids</a>
+      </nav>
     </footer>
     
 </body>
